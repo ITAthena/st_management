@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{model}-{series}",
+ "creation": "2022-11-25 09:57:07.726336",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "model",
+  "todoitem_nr",
+  "column_break_4",
+  "series",
+  "dd_date",
+  "disable_task",
+  "column_break_8",
+  "responsible_position",
+  "calendar",
+  "stop_escalation",
+  "column_break_10",
+  "escalation_position",
+  "reminder_profile",
+  "stop_reminders",
+  "section_break_uafjw",
+  "reference_item",
+  "column_break_vtws7",
+  "reference_nr",
+  "column_break_f3ltb",
+  "serial_nr",
+  "section_break_14",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "model",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "DocType",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "series",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "ST Series",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "responsible_position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Responsible Position",
+   "options": "Position",
+   "reqd": 1
+  },
+  {
+   "fieldname": "escalation_position",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Escalation Position",
+   "options": "Position",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reminder_profile",
+   "fieldtype": "Link",
+   "label": "Reminder Profile",
+   "options": "Reminder Profile",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calendar",
+   "fieldtype": "Link",
+   "label": "Calendar",
+   "options": "ST Calendar",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dd_date",
+   "fieldtype": "Date",
+   "label": "DD Date"
+  },
+  {
+   "fieldname": "todoitem_nr",
+   "fieldtype": "Link",
+   "label": "TodoItem Nr",
+   "no_copy": 1,
+   "options": "Todo Items",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "stop_reminders",
+   "fieldtype": "Check",
+   "label": "Stop Reminders"
+  },
+  {
+   "default": "0",
+   "fieldname": "stop_escalation",
+   "fieldtype": "Check",
+   "label": "Stop Escalation "
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_uafjw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reference_item",
+   "fieldtype": "Link",
+   "label": "Reference Item",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "reference_nr",
+   "fieldtype": "Dynamic Link",
+   "label": "Reference ID",
+   "options": "reference_item"
+  },
+  {
+   "fieldname": "column_break_vtws7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_f3ltb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "serial_nr",
+   "fieldtype": "Data",
+   "label": "Serial Nr"
+  },
+  {
+   "default": "0",
+   "fieldname": "disable_task",
+   "fieldtype": "Check",
+   "label": "Disable Task"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-17 19:42:32.824548",
+ "modified_by": "Administrator",
+ "module": "St Management",
+ "name": "SchTask Control Table",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "IT Implementation Team",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

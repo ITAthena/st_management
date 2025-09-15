@@ -1,0 +1,187 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "EQSR .######",
+ "creation": "2023-07-09 13:06:44.372448",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stct",
+  "column_break_qfcfz",
+  "calendar",
+  "completed_on",
+  "column_break_3",
+  "dd_date",
+  "completed_by",
+  "column_break_6",
+  "responsible_position",
+  "status",
+  "section_break_wayjw",
+  "description",
+  "service_details_tab",
+  "last_service_on",
+  "column_break_uvfbd",
+  "current_service_on",
+  "column_break_dhpyq",
+  "equipment_name",
+  "column_break_u8p04",
+  "serial_nr",
+  "section_break_y0o2z",
+  "service_note",
+  "equipment_services_attachment_tab",
+  "attachments"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "calendar",
+   "fieldtype": "Link",
+   "label": "Calendar",
+   "options": "ST Calendar"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dd_date",
+   "fieldtype": "Date",
+   "label": "DD Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "label": "Status",
+   "options": "ST Status"
+  },
+  {
+   "fieldname": "stct",
+   "fieldtype": "Link",
+   "label": "SchTask Control",
+   "options": "SchTask Control Table"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "completed_on",
+   "fieldtype": "Datetime",
+   "label": "Completed on"
+  },
+  {
+   "fieldname": "responsible_position",
+   "fieldtype": "Link",
+   "label": "Responsible Position",
+   "options": "Position"
+  },
+  {
+   "fieldname": "completed_by",
+   "fieldtype": "Link",
+   "label": "Completed by",
+   "options": "User"
+  },
+  {
+   "fieldname": "service_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Service Details"
+  },
+  {
+   "fieldname": "last_service_on",
+   "fieldtype": "Date",
+   "label": "Last Service on"
+  },
+  {
+   "fieldname": "current_service_on",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Current Service on",
+   "reqd": 1
+  },
+  {
+   "fieldname": "equipment_name",
+   "fieldtype": "Link",
+   "label": "Equipment Name ",
+   "options": "Asset",
+   "reqd": 1
+  },
+  {
+   "fieldname": "serial_nr",
+   "fieldtype": "Data",
+   "label": "Equipment Serial Nr",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service_note",
+   "fieldtype": "Long Text",
+   "label": "Service Note",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_uvfbd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_dhpyq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "Equipment Services Attachment",
+   "options": "Equipment Services Attachment"
+  },
+  {
+   "fieldname": "section_break_wayjw",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_u8p04",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_y0o2z",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_qfcfz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "equipment_services_attachment_tab",
+   "fieldtype": "Tab Break",
+   "label": "Equipment Services Attachment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-09-04 10:28:38.122578",
+ "modified_by": "Administrator",
+ "module": "St Management",
+ "name": "Equipment Services",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

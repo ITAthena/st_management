@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TODO .######",
+ "creation": "2022-11-26 10:15:34.605637",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "model",
+  "schtask_control_table",
+  "column_break_4",
+  "series",
+  "status",
+  "column_break_8",
+  "model_name",
+  "dd_date",
+  "column_break_9",
+  "position",
+  "escalation_position",
+  "section_break_12",
+  "description",
+  "reminders_tab",
+  "first_rem_date",
+  "first_rem_sent_on",
+  "column_break_13",
+  "final_rem_date",
+  "final_rem_sent_on",
+  "stop_escalation",
+  "column_break_16",
+  "escalation_date",
+  "last_escalated_on",
+  "stop_reminders"
+ ],
+ "fields": [
+  {
+   "fieldname": "model",
+   "fieldtype": "Link",
+   "label": "Form",
+   "options": "DocType",
+   "read_only": 1
+  },
+  {
+   "fieldname": "series",
+   "fieldtype": "Link",
+   "label": "Series",
+   "options": "ST Series",
+   "read_only": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Link",
+   "label": "Responsible Position",
+   "options": "Position",
+   "read_only": 1
+  },
+  {
+   "fieldname": "escalation_position",
+   "fieldtype": "Link",
+   "label": "Escalation Position",
+   "options": "Position",
+   "read_only": 1
+  },
+  {
+   "fieldname": "model_name",
+   "fieldtype": "Data",
+   "label": "Form Entry Nr",
+   "read_only": 1
+  },
+  {
+   "fieldname": "dd_date",
+   "fieldtype": "Date",
+   "label": "DD Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "label": "Status",
+   "options": "ST Status",
+   "read_only": 1
+  },
+  {
+   "fieldname": "final_rem_date",
+   "fieldtype": "Date",
+   "label": "Final Rem Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "final_rem_sent_on",
+   "fieldtype": "Date",
+   "label": "Final Rem Sent on",
+   "read_only": 1
+  },
+  {
+   "fieldname": "escalation_date",
+   "fieldtype": "Date",
+   "label": "Next Escalation Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "last_escalated_on",
+   "fieldtype": "Date",
+   "label": "Last Escalated on",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "stop_reminders",
+   "fieldtype": "Check",
+   "label": "Stop Reminders"
+  },
+  {
+   "default": "0",
+   "fieldname": "stop_escalation",
+   "fieldtype": "Check",
+   "label": "Stop Escalation"
+  },
+  {
+   "fieldname": "reminders_tab",
+   "fieldtype": "Tab Break",
+   "label": "Reminders",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_rem_date",
+   "fieldtype": "Date",
+   "label": "1st Rem  Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_rem_sent_on",
+   "fieldtype": "Date",
+   "label": "1st Rem Sent on",
+   "read_only": 1
+  },
+  {
+   "fieldname": "schtask_control_table",
+   "fieldtype": "Link",
+   "label": "Scheduled Task",
+   "options": "SchTask Control Table",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-06-23 21:45:45.280617",
+ "modified_by": "Administrator",
+ "module": "St Management",
+ "name": "Todo Items",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

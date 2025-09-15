@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DCLN .######",
+ "creation": "2022-11-30 10:21:10.407463",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stct",
+  "column_break_3",
+  "calendar",
+  "completed_by",
+  "column_break_6",
+  "dd_date",
+  "completed_on",
+  "column_break_8",
+  "responsible_position",
+  "status",
+  "section_break_11",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "calendar",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Calendar",
+   "options": "ST Calendar",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dd_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "DD Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "ST Status",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "completed_on",
+   "fieldtype": "Datetime",
+   "label": "Completed on",
+   "read_only": 1
+  },
+  {
+   "fieldname": "responsible_position",
+   "fieldtype": "Link",
+   "label": "Responsible Position",
+   "options": "Position",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "completed_by",
+   "fieldtype": "Link",
+   "label": "Completed by",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "stct",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Scheduled Task",
+   "options": "SchTask Control Table",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-09 12:48:42.371386",
+ "modified_by": "Administrator",
+ "module": "St Management",
+ "name": "Deep Cleaning",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

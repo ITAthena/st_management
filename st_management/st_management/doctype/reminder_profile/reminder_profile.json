@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:reminder_profile_name",
+ "creation": "2022-11-25 09:49:50.927046",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "reminder_profile_name",
+  "escalation_calendar",
+  "stop_escalation",
+  "column_break_2",
+  "1st_rem_base_days",
+  "1st_rem_calendar",
+  "column_break_4",
+  "final_rem_base_days",
+  "final_rem_calendar"
+ ],
+ "fields": [
+  {
+   "fieldname": "reminder_profile_name",
+   "fieldtype": "Data",
+   "label": "Reminder Profile Name",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "stop_escalation",
+   "fieldtype": "Check",
+   "label": "Stop Escalation"
+  },
+  {
+   "fieldname": "escalation_calendar",
+   "fieldtype": "Link",
+   "label": "Escalation Calendar",
+   "options": "ST Calendar"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "1st_rem_base_days",
+   "fieldtype": "Int",
+   "label": "1st Rem Base days"
+  },
+  {
+   "fieldname": "1st_rem_calendar",
+   "fieldtype": "Link",
+   "label": "1st Rem Calendar",
+   "options": "ST Calendar"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "final_rem_base_days",
+   "fieldtype": "Int",
+   "label": "Final Rem Base days"
+  },
+  {
+   "fieldname": "final_rem_calendar",
+   "fieldtype": "Link",
+   "label": "Final Rem Calendar",
+   "options": "ST Calendar"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-26 10:44:28.806330",
+ "modified_by": "Administrator",
+ "module": "St Management",
+ "name": "Reminder Profile",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
