@@ -31,8 +31,7 @@
   "section_break_y0o2z",
   "service_note",
   "equipment_services_attachment_tab",
-  "attachments",
-  "section_break_ymyp9"
+  "attachments"
  ],
  "fields": [
   {
@@ -158,15 +157,11 @@
    "fieldname": "equipment_services_attachment_tab",
    "fieldtype": "Tab Break",
    "label": "Equipment Services Attachment"
-  },
-  {
-   "fieldname": "section_break_ymyp9",
-   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-20 06:36:24.937229",
+ "modified": "2025-09-20 06:46:44.875664",
  "modified_by": "Administrator",
  "module": "St Management",
  "name": "Equipment Services",
