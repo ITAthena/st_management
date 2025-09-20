@@ -32,8 +32,7 @@
   "service_note",
   "equipment_services_attachment_tab",
   "attachments",
-  "section_break_ymyp9",
-  "test_data"
+  "section_break_ymyp9"
  ],
  "fields": [
   {
@@ -163,16 +162,11 @@
   {
    "fieldname": "section_break_ymyp9",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "test_data",
-   "fieldtype": "Data",
-   "label": "Test Data"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-09-17 10:13:58.643507",
+ "modified": "2025-09-20 06:36:24.937229",
  "modified_by": "Administrator",
  "module": "St Management",
  "name": "Equipment Services",
